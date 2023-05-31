@@ -1,0 +1,99 @@
+.anim {
+
+    background-image: linear-gradient(rgb(93, 89, 98), rgb(45, 41, 51));
+    padding-left: 450px;
+    padding-right: 450px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+   
+    #a1{
+        margin-top: 80px;
+        font-size: 65px;
+        font-weight: bolder;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #a2{
+        margin-top: 40px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #a3{
+        .dt{
+            font-size: 12px;
+            width: 20vw;
+        }
+        .ct{
+            h4{
+                color: rgb(247,145,77);
+            }
+            font-size: 16px;
+            text-align: start;
+            padding-left: 15px;
+            padding-bottom: 100px;
+        }
+        
+        margin-top: 40px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        width: 350px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        background-color:rgb(247,145,77) ;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+        transition-property:all;
+        transition-duration: 1s;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .anim{
+     padding-left: 0px;
+     padding-right: 0px;
+    }
+ }
+
+@media only screen and (max-width: 1020px){
+   .anim{
+    padding-left: 0px;
+    padding-right: 0px;
+    #a3{
+        flex-direction: column;
+        .dt{
+            width: 100vw;
+        }
+        .ct{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+   }
+}

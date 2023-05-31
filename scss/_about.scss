@@ -1,0 +1,117 @@
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(94, 90, 99), rgb(45, 41, 51));
+    overflow-x: hidden;
+
+    button {
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(247, 145, 77);
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.leftdiv {
+    width: 30vw;
+    text-align: left;
+    color: white;
+    padding: 20px;
+
+    h4 {
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: large;
+        line-height: 2;
+    }
+
+}
+
+.rightdiv {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10PX;
+    grid-column-gap: 100px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(247, 145, 77);
+        border-radius: 50%;
+        margin-bottom: 10px;
+        color: 10px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 35px;
+            padding-top: 20px;
+            color: white;
+            font-weight: bolder;
+            transition-property: all;
+            transition-duration: .3s;
+        }
+
+        p:hover {
+            padding-top: 10px;
+        }
+
+
+    }
+
+    p {
+        font-size: 16px;
+        color: white;
+        font-weight: bolder;
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+    #about {
+        
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .leftdiv{
+        padding-top: 100px;
+        width: 100vw;
+        text-align: center;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}

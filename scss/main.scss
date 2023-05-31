@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+
+@import "navi";
+@import "person";
+@import "section3";
+@import "grid";
+@import "about";
+@import "frm";
+@import "footer";
+
+@media only screen and (max-width:600px){
+   body{
+    overflow-x: auto;
+   }
+}

@@ -1,0 +1,71 @@
+.prsn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(59,56,63);
+
+    .pright{
+        color: rgb(255, 255, 255);
+        display: flex;
+        width: 650px;
+        flex-direction: column;
+        justify-content:center;
+        
+        span{
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+        .name{
+            font-weight: bolder;
+            font-size: 60px;
+        }
+        button{
+            width: 350px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color:rgb(247,145,77) ;
+            font-weight: bold;
+            color: white;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+      
+    }
+
+    .pleft{
+        width: 900px;
+        img{
+            width: 100%;
+            height: auto;
+            align-items: end;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .prsn{
+       
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .pright{
+            
+            text-align: center;
+            width: 100%;
+            height: auto;
+            padding-bottom: 20px;
+        
+        }
+        .pleft{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
